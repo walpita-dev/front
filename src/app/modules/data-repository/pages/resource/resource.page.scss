@@ -1,0 +1,25 @@
+:host {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  app-searchbar {
+    width: 800px;
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+  }
+
+  .table {
+    margin-top: 4em;
+    width: 90%;
+    button {
+      margin-bottom: 10px;
+    }
+  }
+}

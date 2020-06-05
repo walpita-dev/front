@@ -1,0 +1,8 @@
+<div class="cart-list">
+  <button mat-stroked-button (click)="onDeleteAll()">Tout supprimer</button>
+  <app-cart-list-card
+    *ngFor="let resource of (selectedResources$ | async).selectedResources"
+    [completeResource]="resource"
+    (deleteClick)="onDeleteClick(resource)">
+  </app-cart-list-card>
+</div>

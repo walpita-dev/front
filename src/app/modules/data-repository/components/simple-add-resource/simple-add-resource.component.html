@@ -1,0 +1,31 @@
+<form class="form-container">
+  <mat-form-field [floatLabel]="floatLabelControl.value">
+    <mat-label>Nom Français</mat-label>
+    <input matInput required>
+  </mat-form-field>
+
+  <mat-form-field [floatLabel]="floatLabelControl.value">
+    <mat-label>Nom Anglais</mat-label>
+    <input matInput required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill"
+    [floatLabel]="floatLabelControl.value">
+    <mat-select required>
+      <mat-option>-- None --</mat-option>
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+    <mat-label>Type</mat-label>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill"
+    [floatLabel]="floatLabelControl.value">
+    <mat-select required>
+      <mat-option value="offline">Offline</mat-option>
+      <mat-option value="online">Online</mat-option>
+    </mat-select>
+    <mat-label>Status</mat-label>
+  </mat-form-field>
+
+</form>
+

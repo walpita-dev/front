@@ -1,0 +1,12 @@
+:host {
+  .frame {
+    background: linear-gradient(to right, #3f4461, #5d7b9c);
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    align-content: center;
+  }
+  .login {
+    width: 25%;
+  }
+}

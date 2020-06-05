@@ -1,0 +1,52 @@
+:host {
+  .toast {
+    font-size: 16px;
+    line-height: 1.3em;
+    padding: 10px 15px;
+    margin: 5px 10px;
+    position: relative;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .toast-danger {
+    background-color: var(--error-toast);
+    color: #ffffff;
+  }
+
+  .toast-close {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .toast-close:before,
+  .toast-close:after {
+    content: '';
+    width: 15px;
+    border-top: solid 2px white;
+    position: absolute;
+    top: 5px;
+    right: -1px;
+    display: block;
+  }
+  
+  .toast-close:before {
+    transform: rotate(45deg);
+  }
+  
+  .toast-close:after {
+    transform: rotate(135deg);
+  }
+  
+  .toast-close:hover:before,
+  .toast-close:hover:after {
+    border-top: solid 2px #d8d8d8;
+  }
+  
+}

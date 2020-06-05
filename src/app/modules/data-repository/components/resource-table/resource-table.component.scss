@@ -1,0 +1,62 @@
+:host {
+  .example-container {
+    position: relative;
+  }
+  
+  .example-table-container {
+    position: relative;
+    overflow: auto;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .example-loading-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 56px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  td {
+    font-size: 0.85em;
+  }
+  
+  .icon-button {
+    display: flex;
+  }
+
+  .mat-column-FRName {
+    width: 33.75%;
+  }
+
+  .mat-column-ENName {
+    width: 33.75%;
+  }
+
+  .mat-column-status {
+    width: 5%;
+  }
+
+  .mat-column-status {
+    width: 5%;
+  }
+
+  .mat-column-created_at {
+    width: 7.5%;
+  }
+
+  .mat-column-last_updated_at {
+    width: 7.5%;
+  }
+  .mat-column-action {
+    width: 7.5%;
+  }
+}

@@ -1,0 +1,17 @@
+<form class="form">
+  <mat-form-field class="searchbar">
+    <mat-label>{{ placeholderLabel }}</mat-label>
+    <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      <mat-option *ngFor="let option of options" [value]="option">
+        {{option.FRName}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  <button
+    mat-stroked-button
+    color="primary"
+    class="search-button"
+    (click)="onSearchClick($event)"
+  >{{ buttonLabel }}</button>
+</form>

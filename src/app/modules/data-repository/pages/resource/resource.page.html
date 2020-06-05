@@ -1,0 +1,19 @@
+<div class="container">
+  <h2> {{ 'data-repository-ressource-main-label' | translate }} </h2>
+  <app-searchbar
+    [buttonLabel]="'data-repository-ressource-searchbar-button-label' | translate"
+    [placeholderLabel]="'data-repository-ressource-searchbar-placeholder-label' | translate"
+    (searchValue)="onSearchValue($event)"
+    (searchClick)="onSearchClick($event)"
+    [options]="options"
+  ></app-searchbar>
+  <div class="table">
+    <button mat-raised-button (click)="onCreateResource()">Créer une ressource</button>
+    <app-resource-table
+      [resources]="resources"
+      (addResourceToCart)="onAddResourceToCart($event)"
+      (removeResourceFromCart)="onRemoveResourceFromCart($event)"
+      (modifyResource)="onModifyResource($event)"
+    ></app-resource-table>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+{
+  "layout-main-label": "Skilvioo Backoffice",
+  "layout-data-repository-menu-label": "Référenciel",
+  "layout-data-repository-menu-resource": "Ressource",
+  "layout-data-repository-menu-job": "Métier",
+  "layout-data-repository-menu-activity": "Activité",
+  "data-repository-ressource-main-label": "Ressources",
+  "data-repository-ressource-searchbar-placeholder-label": "Nom de la ressource",
+  "data-repository-ressource-searchbar-button-label": "Rechercher"
+}

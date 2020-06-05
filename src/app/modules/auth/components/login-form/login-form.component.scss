@@ -1,0 +1,142 @@
+:host {
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    border-radius: 10px;
+  }
+
+  .form-group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+  }
+
+  .form-control {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    outline: 0;
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  
+    &::placeholder {
+      color: transparent;
+    }
+  
+    &:placeholder-shown ~ .form-label {
+      font-size: 1rem;
+      cursor: text;
+      top: 20px;
+    }
+  }
+
+  .form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+
+  .form-control:focus {
+    ~ .form-label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 0.7rem;
+      color: #ffffff;
+      font-weight:700;    
+    }
+    padding-bottom: 6px;  
+    font-weight: 200;
+    border-width: 2px;
+    border-image: linear-gradient(to right, #ffffff, #7491ac);
+    border-image-slice: 1;
+  }
+
+  .form-control{
+    &:required, &:invalid {
+      box-shadow: none;
+    }
+  }
+
+  .invalid-feedback {
+    padding-top: 0.2rem;
+    font-size: 0.8rem;
+    color: #ce4646;
+  }
+
+  button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 2rem;
+    width: 6rem;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    span {
+      color: rgba(22, 76, 167, 1);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.7px;
+    }
+    &:hover{
+      animation: rotate 0.7s ease-in-out both;
+      span {
+        animation: storm 0.7s ease-in-out both;
+        animation-delay: 0.06s;
+      }
+    }
+  }
+    
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }   
+}

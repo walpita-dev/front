@@ -1,0 +1,4 @@
+<div *ngFor="let toast of toasts" class="{{cssClass(toast)}}">
+  <span [innerHTML]="toast.message"></span>
+  <a class="toast-close" (click)="removeToast(toast)"></a>
+</div>
